@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zft.demo.mapper.BeijingBeanMapper">
+  <resultMap id="BaseResultMap" type="com.zft.demo.bean.BeijingBean">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="datetime" jdbcType="VARCHAR" property="datetime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.zft.demo.bean.BeijingBean">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, url, title, datetime
+  </sql>
+  <sql id="Blob_Column_List">
+    content
+  </sql>
+  <insert id="insert" parameterType="com.zft.demo.bean.BeijingBean">
+    insert into beijing (id, url, title, 
+      datetime, content)
+    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{datetime,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+</mapper>
