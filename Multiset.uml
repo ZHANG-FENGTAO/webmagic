@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.google.common.collect.Multiset</OriginalElement>
+  <nodes>
+    <node x="-128.72135416666657" y="333.33333333333337">com.google.common.collect.TreeMultiset</node>
+    <node x="118.33333333333343" y="253.33333333333334">com.google.common.collect.SortedMultiset</node>
+    <node x="-265.6666666666666" y="253.33333333333334">com.google.common.collect.ConcurrentHashMultiset</node>
+    <node x="-408.6666666666666" y="253.33333333333334">com.google.common.collect.HashMultiset</node>
+    <node x="-115.16666666666657" y="173.33333333333334">com.google.common.collect.Multiset</node>
+    <node x="-57.66666666666657" y="253.33333333333334">com.google.common.collect.ImmutableMultiset</node>
+    <node x="-271.4166666666666" y="93.33333333333334">java.util.Collection</node>
+    <node x="-47.64322916666657" y="13.333333333333343">java.lang.Iterable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.google.common.collect.SortedMultiset" target="java.lang.Iterable">
+      <point x="33.25" y="-15.0" />
+      <point x="218.08333333333343" y="68.33333333333334" />
+      <point x="22.106770833333428" y="68.33333333333334" />
+      <point x="23.25" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.ConcurrentHashMultiset" target="com.google.common.collect.Multiset">
+      <point x="46.75" y="-15.0" />
+      <point x="-125.41666666666657" y="233.33333333333334" />
+      <point x="-86.96666666666658" y="233.33333333333334" />
+      <point x="-18.80000000000001" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.SortedMultiset" target="com.google.common.collect.Multiset">
+      <point x="-33.25" y="-15.0" />
+      <point x="151.58333333333343" y="223.33333333333334" />
+      <point x="-30.566666666666606" y="223.33333333333334" />
+      <point x="37.599999999999966" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.ImmutableMultiset" target="com.google.common.collect.Multiset">
+      <point x="-39.0" y="-15.0" />
+      <point x="-18.666666666666572" y="233.33333333333334" />
+      <point x="-49.36666666666662" y="233.33333333333334" />
+      <point x="18.799999999999955" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.Multiset" target="java.util.Collection">
+      <point x="0.0" y="-15.0" />
+      <point x="-68.16666666666657" y="153.33333333333334" />
+      <point x="-197.91666666666657" y="153.33333333333334" />
+      <point x="21.0" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.ImmutableMultiset" target="java.util.Collection">
+      <point x="39.0" y="-15.0" />
+      <point x="59.33333333333343" y="143.33333333333334" />
+      <point x="-176.91666666666657" y="143.33333333333334" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.ConcurrentHashMultiset" target="java.util.Collection">
+      <point x="-46.75" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.Collection" target="java.lang.Iterable">
+      <point x="0.0" y="-15.0" />
+      <point x="-218.91666666666657" y="68.33333333333334" />
+      <point x="-24.393229166666572" y="68.33333333333334" />
+      <point x="-23.25" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.TreeMultiset" target="com.google.common.collect.Multiset">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.HashMultiset" target="com.google.common.collect.Multiset">
+      <point x="30.75" y="-15.0" />
+      <point x="-316.4166666666666" y="223.33333333333334" />
+      <point x="-105.7666666666666" y="223.33333333333334" />
+      <point x="-37.60000000000002" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.HashMultiset" target="java.util.Collection">
+      <point x="-30.75" y="-15.0" />
+      <point x="41.25" y="140.0" />
+      <point x="179.25" y="140.0" />
+      <point x="-21.0" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.TreeMultiset" target="com.google.common.collect.SortedMultiset">
+      <point x="40.0" y="-15.0" />
+      <point x="-28.721354166666572" y="308.33333333333337" />
+      <point x="184.83333333333343" y="308.33333333333337" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.google.common.collect.TreeMultiset" target="java.util.Collection">
+      <point x="-40.0" y="-15.0" />
+      <point x="-108.72135416666657" y="308.33333333333337" />
+      <point x="-419.1666666666666" y="308.33333333333337" />
+      <point x="-419.1666666666666" y="143.33333333333334" />
+      <point x="-260.9166666666666" y="143.33333333333334" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="132.0" y="264.0" />
+  <SelectedNodes>
+    <node>com.google.common.collect.TreeMultiset</node>
+    <node>com.google.common.collect.SortedMultiset</node>
+    <node>com.google.common.collect.ConcurrentHashMultiset</node>
+    <node>com.google.common.collect.HashMultiset</node>
+    <node>com.google.common.collect.Multiset</node>
+    <node>com.google.common.collect.ImmutableMultiset</node>
+    <node>java.util.Collection</node>
+    <node>java.lang.Iterable</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
