@@ -1,11 +1,10 @@
 package com.zft.demo.guava;
 
 import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Table;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author zft
@@ -107,7 +106,12 @@ public class GuavaTest {
 		Collection<String> values = table.values();
 		System.out.println("");
 
+		ArrayList<Integer> arrayList = Lists.newArrayList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+		List<List<Integer>> partition = Lists.partition(arrayList, 2);
+		System.out.println(partition);
 
 	}
+
+
 
 }

@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * @author zft
  * @date 2019/3/25.
  */
-public class HuangNiu implements MethodInterceptor {
+public class MyCglibProxy implements MethodInterceptor {
 	@Override
 	public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
 		System.out.println("黄牛代购");
@@ -23,11 +23,11 @@ public class HuangNiu implements MethodInterceptor {
 	}
 
 	public static void main(String[] args) {
-		HuangNiu huangNiu = new HuangNiu();
+		MyCglibProxy myCglibProxy = new MyCglibProxy();
 
 		Enhancer enhancer = new Enhancer();
 		enhancer.setSuperclass(CommonPerson.class);
-		enhancer.setCallback(huangNiu);
+		enhancer.setCallback(myCglibProxy);
 
 		CommonPerson person = (CommonPerson) enhancer.create();
 		String s = person.buyTicket("cglib动态代理");
